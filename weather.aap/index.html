@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-app">
+
+        <h1>Weather App</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="locationInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="errorMessage"></p>
+
+        <div class="weather-card" id="weatherCard">
+
+            <div class="location">
+                <h2 id="city">London</h2>
+                <p id="country">United Kingdom</p>
+            </div>
+
+            <div class="weather-main">
+
+                <img id="weatherIcon" src="" alt="Weather Icon">
+
+                <div>
+                    <h3>
+                        <span id="temperature">--</span>°C
+                    </h3>
+                    <p id="condition">Search a location</p>
+                </div>
+
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail-box">
+                    <span>Feels Like</span>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+                <div class="detail-box">
+                    <span>Humidity</span>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="detail-box">
+                    <span>Wind</span>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+                <div class="detail-box">
+                    <span>UV Index</span>
+                    <strong id="uv">--</strong>
+                </div>
+
+            </div>
+
+            <p class="updated">
+                Last updated: <span id="updated">--</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
